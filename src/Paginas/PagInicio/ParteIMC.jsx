@@ -1,6 +1,6 @@
 function ParteIMC() {
   return (
-    <div>ParteIMC</div>
+    <div>ParteIMC holaaaa</div>
   )
 }
 
