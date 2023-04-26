@@ -1,0 +1,121 @@
+/* section pay */
+
+.PartePagos {
+    border: 1px solid #1e1e1e;
+}
+
+.PartePagos .title {
+
+    text-align: center;
+    padding: 20px;
+}
+
+.cartilla-pago {
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.356);
+    border-radius: 15px;
+    transition: .3s;
+    background-color: #ffffff;
+}
+
+.cartilla-pago:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.pay-title>h4,
+.pay-title>h5 {
+    text-align: center;
+    font-size: 25px;
+}
+
+ul{
+    position: relative;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.FontAwesomeIcon{
+position: absolute;
+transform: translate(-20px, 4px);
+}
+
+.pay-title>h4>.span {
+    font-size: 15px;
+}
+
+
+
+
+/* section IMC */
+/* 
+.section-imc {
+    max-width: 1440px;
+    height: 600px;
+    border: 1px solid #1e1e1e;
+    background-color: #ffffff;
+}
+
+.datos-title>h3 {
+    font-size: 23px;
+}
+
+.datos-title>h1 {
+    font-size: 35px;
+}
+
+.datos span {
+    color: rgb(226, 36, 3);
+}
+
+.datos>p {
+    font-size: 13px;
+    color: rgb(134, 127, 127);
+}
+
+.table-imc {
+    position: relative;
+}
+
+.table-imc>p {
+    position: absolute;
+}
+
+.resultado {
+    position: relative;
+    height: 350px;
+}
+
+.resultado>i {
+    position: absolute;
+    right: 0;
+    display: none;
+    animation: flecha 1s infinite linear;
+}
+
+@keyframes flecha {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 10px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+
+#resultadoIMC {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    color: rgb(120, 123, 126);
+} */

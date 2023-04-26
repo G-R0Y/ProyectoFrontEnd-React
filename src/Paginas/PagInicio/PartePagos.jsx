@@ -1,78 +1,48 @@
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
+import "../../Estilos/Gianroy.css"
+import CartillaPago from '../../Componentes/CartillaPago'
 
+
+const precios = [{
+    tipo: "Basico",
+    precio: 59,
+    icon: [faCheck, faXmark, faXmark, faXmark, faXmark],
+    color: ["#26d723", "#d72323", "#d72323", "#d72323", "#d72323"],
+    desc: ["Accede a todas las areas del gimnasio", "Acceso a sillones de masajes", "Acceso a cualquier horario sin reserva", "Acceso a todas las sedes", "Tutor personalizado"]
+}, {
+    tipo: "Estandar",
+    precio: 79,
+    icon: [faCheck, faCheck, faCheck, faXmark, faXmark],
+    color: ["#26d723", "#26d723", "#26d723", "#d72323", "#d72323"],
+    desc: ["Accede a todas las areas del gimnasio", "Acceso a sillones de masajes", "Acceso a cualquier horario sin reserva", "Acceso a todas las sedes", "Tutor personalizado"]
+}, {
+    tipo: "Premium",
+    precio: 99,
+    icon: [faCheck, faCheck, faCheck, faCheck, faCheck],
+    color: ["#26d723", "#26d723", "#26d723", "#26d723", "#26d723"],
+    desc: ["Accede a todas las areas del gimnasio", "Acceso a sillones de masajes", "Acceso a cualquier horario sin reserva", "Acceso a todas las sedes", "Tutor personalizado"]
+}]
 
 function PartePagos() {
     return (
 
-        <div className="container">
-            <div className="title2">
-                <h2><br/> Choose Your Pricing Plan </h2>
+        <div className="container-fluid py-5 PartePagos">
+            <div className="title">
+                <h2>ESCOJE TU PLAN DE PAGO</h2>
             </div>
-            <div className="row  justify-content-evenly mb-5">
-
-                <div className="col-lg-3 col-sm-8 col-11 m-3 cartilla-pago Basico">
-                    <div className="pay-title">
-                        <h5 className="text-center mb-4">Basico</h5>
-                        <h4 className="text-center">$ 59<span className="span">.90/mes</span></h4>
-                    </div>
-                    <div className="pay-body">
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Accede a todas las areas del
-                            gimnasio</h3>
-                        <h3><i className="fa-solid fa-xmark" style="color: #d72323;"></i> Acceso a sillones de masajes
-                        </h3>
-                        <h3><i className="fa-solid fa-xmark" style="color: #d72923;"></i> Acceso a cualquier horario sin
-                            reserva</h3>
-                        <h3><i className="fa-solid fa-xmark" style="color: #d72323;"></i> Acceso a todas las sedes</h3>
-                        <h3><i className="fa-solid fa-xmark" style="color: #d72323;"></i> Tutor personalizado</h3>
-                    </div>
-                    <div className="pay-btn">
-                        <button className="btn btn-danger" style="width: 100%;">Unete Ahora</button>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-sm-8 col-11 m-3 cartilla-pago Premium">
-                    <div className="pay-title">
-                        <h5 className="text-center titlec mb-4">Premium</h5>
-                        <h4 className="text-center">$ 99<span className="span">.90/mes</span></h4>
-                    </div>
-                    <div className="pay-body">
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Accede a todas las areas del
-                            gimnasio</h3>
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Acceso a sillones de masajes
-                        </h3>
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Acceso a cualquier horario sin
-                            reserva</h3>
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Acceso a todas las sedes</h3>
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Tutor personalizado</h3>
-                    </div>
-                    <div className="pay-btn ">
-                        <button className="btn btn-danger btn-block " style="width: 100%;">Unete Ahora</button>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-sm-8 col-11 m-3 cartilla-pago Estandar">
-                    <div className="pay-title">
-                        <h5 className="text-center mb-4">Estandar</h5>
-                        <h4 className="text-center
-                            ">$ 79<span className="span">.90/mes</span></h4>
-                    </div>
-                    <div className="pay-body">
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Accede a todas las areas del
-                            gimnasio</h3>
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Acceso a sillones de masajes
-                        </h3>
-                        <h3><i className="fa-solid fa-check" style="color: #26d723;"></i> Acceso a cualquier horario sin
-                            reserva</h3>
-                        <h3><i className="fa-solid fa-xmark" style="color: #d72323;"></i> Acceso a todas las sedes</h3>
-                        <h3><i className="fa-solid fa-xmark" style="color: #d72323;"></i> Tutor personalizado</h3>
-                    </div>
-                    <div className="pay-btn">
-                        <button className="btn btn-danger" style="width: 100%;">Unete Ahora</button>
-                    </div>
-                </div>
+            <div className="row justify-content-evenly mb-5">
+                {
+                    precios.map((valor, i) => {
+                        return (
+                            <div className="col-md-3 col-sm-8 col-11 m-3 cartilla-pago Basico" key={i}>
+                                <CartillaPago data={valor} />
+                            </div>
+                        )
+                    })
+                }
             </div>
-        </div>
-
-
+        </div >
 
     )
 }
