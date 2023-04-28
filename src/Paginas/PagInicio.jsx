@@ -12,7 +12,6 @@ function PagInicio() {
             <ParteIMC />
 
 
-
         </>
     )
 }

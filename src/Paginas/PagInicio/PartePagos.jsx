@@ -1,4 +1,3 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
 import "../../Estilos/Gianroy.css"
 import CartillaPago from '../../Componentes/CartillaPago'
@@ -27,15 +26,15 @@ const precios = [{
 function PartePagos() {
     return (
 
-        <div className="container-fluid py-5 PartePagos">
+        <div className="container-fluid PartePagos">
             <div className="title">
-                <h2>ESCOJE TU PLAN DE PAGO</h2>
+                <h2>ELIGE TU PLAN DE PREFERENCIA</h2>
             </div>
             <div className="row justify-content-evenly mb-5">
                 {
                     precios.map((valor, i) => {
                         return (
-                            <div className="col-md-3 col-sm-8 col-11 m-3 cartilla-pago Basico" key={i}>
+                            <div className="col-lg-3 col-sm-5 col-10 m-3 cartilla-pago" key={i}>
                                 <CartillaPago data={valor} />
                             </div>
                         )

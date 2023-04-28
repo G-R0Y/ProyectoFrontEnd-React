@@ -2,6 +2,8 @@
 
 .PartePagos {
     border: 1px solid #1e1e1e;
+    padding-top: 45px;
+    padding-bottom: 25px;
 }
 
 .PartePagos .title {
@@ -10,7 +12,7 @@
     padding: 20px;
 }
 
-.cartilla-pago {
+.PartePagos .cartilla-pago {
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.356);
     border-radius: 15px;
@@ -18,32 +20,32 @@
     background-color: #ffffff;
 }
 
-.cartilla-pago:hover {
+.PartePagos .cartilla-pago:hover {
     transform: scale(1.1);
     z-index: 2;
 }
 
-.pay-title>h4,
-.pay-title>h5 {
+.PartePagos .pay-title>h4,
+.PartePagos .pay-title>h5 {
     text-align: center;
     font-size: 25px;
 }
 
-ul{
+.PartePagos ul {
     position: relative;
 }
 
-li{
+.PartePagos li {
     text-decoration: none;
     list-style: none;
 }
 
-.FontAwesomeIcon{
-position: absolute;
-transform: translate(-20px, 4px);
+.PartePagos .FontAwesomeIcon {
+    position: absolute;
+    transform: translate(-20px, 4px);
 }
 
-.pay-title>h4>.span {
+.PartePagos .pay-title>h4>.span {
     font-size: 15px;
 }
 
@@ -51,49 +53,41 @@ transform: translate(-20px, 4px);
 
 
 /* section IMC */
-/* 
-.section-imc {
-    max-width: 1440px;
-    height: 600px;
+
+.ParteIMC {
     border: 1px solid #1e1e1e;
-    background-color: #ffffff;
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
-.datos-title>h3 {
+.ParteIMC .datos-title>h3 {
     font-size: 23px;
 }
 
-.datos-title>h1 {
+.ParteIMC .datos-title>h1 {
     font-size: 35px;
 }
 
-.datos span {
-    color: rgb(226, 36, 3);
+.ParteIMC span {
+    color: rgb(255, 38, 0);
 }
 
-.datos>p {
-    font-size: 13px;
-    color: rgb(134, 127, 127);
-}
-
-.table-imc {
-    position: relative;
-}
-
-.table-imc>p {
+.ParteIMC .resultado {
     position: absolute;
+    height: 100%;
 }
 
-.resultado {
-    position: relative;
-    height: 350px;
-}
-
-.resultado>i {
+.ParteIMC .resultado>* {
     position: absolute;
     right: 0;
     display: none;
     animation: flecha 1s infinite linear;
+}
+
+.ParteIMC .fuente {
+    position: absolute;
+    font-size: 15px;
+    text-align: start;
 }
 
 @keyframes flecha {
@@ -110,12 +104,11 @@ transform: translate(-20px, 4px);
     }
 }
 
-
-#resultadoIMC {
+.ParteIMC .resultadoIMC {
     display: flex;
     align-items: center;
     width: 150px;
     height: 30px;
     font-size: 15px;
     color: rgb(120, 123, 126);
-} */
+}
