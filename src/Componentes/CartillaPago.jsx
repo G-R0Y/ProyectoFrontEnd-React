@@ -1,6 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
-
 
 const CartillaPago = (data) => {
 
@@ -16,7 +14,7 @@ const CartillaPago = (data) => {
                 <ul>
                     {valor.icon.map((items, i) => {
                         return (
-                            <li><FontAwesomeIcon icon={valor.icon[i]} color={valor.color[i]} className='FontAwesomeIcon' />{valor.desc[i]}</li>
+                            <li key={i}><FontAwesomeIcon icon={valor.icon[i]} color={valor.color[i]} className='FontAwesomeIcon' />{valor.desc[i]}</li>
                         )
                     })}
 
