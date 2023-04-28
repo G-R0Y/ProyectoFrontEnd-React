@@ -80,7 +80,6 @@
 .ParteIMC .resultado>* {
     position: absolute;
     right: 0;
-    display: none;
     animation: flecha 1s infinite linear;
 }
 
@@ -105,10 +104,7 @@
 }
 
 .ParteIMC .resultadoIMC {
-    display: flex;
-    align-items: center;
-    width: 150px;
-    height: 30px;
     font-size: 15px;
     color: rgb(120, 123, 126);
+    /* border: 1px solid red; */
 }

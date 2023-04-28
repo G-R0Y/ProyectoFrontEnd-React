@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-const CalcularIMC = (valor) => {
+const CalcularIMC = (props) => {
 
-    const { resultIMC } = valor
+    const { resultIMC,valor } = props
     
     const [datos, setDatos] = useState({
         altura: 0,
@@ -51,10 +51,10 @@ const CalcularIMC = (valor) => {
             </div>
 
             <div className="col-12 ">
-                <div className="row px-3 d-flex justify-content-sm-between justify-content-evenly  mt-2 datos-btn ">
+                <div className="row px-3 d-flex justify-content-sm-between justify-content-evenly align-items-center mt-2 datos-btn ">
                     <button onClick={() => resultIMC(datos)}
                         type="button" className="col-5 btn btn-danger" >Calcular IMC</button>
-                    <label className="col-5 resultadoIMC"></label>
+                    <label className="col-5 text-end resultadoIMC" style={{ display: valor.display}}>Su IMC es de {valor.valIMC.toFixed(2)}</label>
                     <p className="mt-2"><span>*</span> Datos Obigatorios</p>
                 </div>
             </div>
