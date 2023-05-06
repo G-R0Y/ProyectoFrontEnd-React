@@ -1,5 +1,5 @@
 import React from "react";
-import "../Estilos/Rodrigo.css"
+import "../Estilos/Rodrigo.css";
 import {
   MDBFooter,
   MDBContainer,
@@ -12,7 +12,7 @@ import {
 
 function Footer() {
   return (
-    <MDBFooter className="text-center" color="white" bgColor="dark">
+    <MDBFooter className="" color="white" bgColor="dark">
       <MDBContainer className="p-4">
         <section className="">
           <MDBRow>
@@ -42,55 +42,45 @@ function Footer() {
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 id="footer-space-line"
               />
-              <ul>
-                <li>
-                  <p>
-                    <a href="#!" class="text-white">
-                      About us
-                    </a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="#!" class="text-white">
-                      About Us V2
-                    </a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="#!" class="text-white">
-                      Contact Us
-                    </a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="#!" class="text-white">
-                      Our Blog
-                    </a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="#!" class="text-white">
-                      Shop
-                    </a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="#!" class="text-white">
-                      Testimonial
-                    </a>
-                  </p>
-                </li>
-              </ul>
+
+              <p>
+                <a href="#!" class="text-white">
+                  About us
+                </a>
+              </p>
+
+              <p>
+                <a href="#!" class="text-white">
+                  About Us V2
+                </a>
+              </p>
+
+              <p>
+                <a href="#!" class="text-white">
+                  Contact Us
+                </a>
+              </p>
+
+              <p>
+                <a href="#!" class="text-white">
+                  Our Blog
+                </a>
+              </p>
+
+              <p>
+                <a href="#!" class="text-white">
+                  Shop
+                </a>
+              </p>
+
+              <p>
+                <a href="#!" class="text-white">
+                  Testimonial
+                </a>
+              </p>
             </MDBCol>
 
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-
-
               <h6 class="text-uppercase fw-bold">Our Service</h6>
               <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
@@ -133,6 +123,10 @@ function Footer() {
                 Power GYM Lift is champ in providing its users with absolutely
                 everything a fitness or gym site needs
               </p>
+              <div className="cel">
+                <MDBIcon fas icon="phone-alt" className="phone" />
+                <h4 className="numero">1-800-643-430</h4>
+              </div>
               <section className="mb-4">
                 <MDBBtn
                   outline
@@ -156,16 +150,7 @@ function Footer() {
                   <MDBIcon fab icon="twitter" />
                 </MDBBtn>
 
-                <MDBBtn
-                  outline
-                  color="light"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon fab icon="google" />
-                </MDBBtn>
+                
 
                 <MDBBtn
                   outline
@@ -189,16 +174,7 @@ function Footer() {
                   <MDBIcon fab icon="linkedin-in" />
                 </MDBBtn>
 
-                <MDBBtn
-                  outline
-                  color="light"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon fab icon="github" />
-                </MDBBtn>
+                
               </section>
             </MDBCol>
           </MDBRow>
@@ -210,7 +186,6 @@ function Footer() {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         © 2020 Copyright:
-        
       </div>
     </MDBFooter>
   );
