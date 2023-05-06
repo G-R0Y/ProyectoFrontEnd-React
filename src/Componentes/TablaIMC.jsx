@@ -14,7 +14,7 @@ const TablaIMC = (data) => {
             </div>
             <div className="d-flex justify-content-center">
                 <table width="100%" border="1" className="texto_tabla">
-                    <tbody bgcolor="#e8e8e8" width="50%" height="50">
+                    <tbody bgcolor="#e8e8e8" style={{color:"#1e1e1e"}} width="50%" height="50">
                         <tr>
                             <td width="50%" height="50"><strong>IMC</strong></td>
                             <td width="50%" height="50"><strong>ESTADO</strong></td>

@@ -17,70 +17,70 @@ function Footer() {
         <section className="">
           <MDBRow>
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-              <div class="logo-footer">
+              <div className="logo-footer">
                 <img src="../src/assets/logo.png" alt="Icon-Logo" />
               </div>
               <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
+                className="mb-4 mt-0 d-inline-block mx-auto"
                 id="footer-space-line"
               />
               <p>
-                <i class="fas fa-home mr-3"></i> 27 Division St, New York,
+                <i className="fas fa-home mr-3"></i> 27 Division St, New York,
                 United State America
               </p>
               <p>
-                <i class="fas fa-phone mr-3"></i> +1 (044) 123 456 789
+                <i className="fas fa-phone mr-3"></i> +1 (044) 123 456 789
               </p>
               <p>
-                <i class="fas fa-envelope mr-3"></i> info@example.com
+                <i className="fas fa-envelope mr-3"></i> info@example.com
               </p>
             </MDBCol>
 
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <h6 className="text-uppercase fw-bold">Useful links</h6>
               <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
+                className="mb-4 mt-0 d-inline-block mx-auto"
                 id="footer-space-line"
               />
               <ul>
                 <li>
                   <p>
-                    <a href="#!" class="text-white">
+                    <a href="#!" className="text-white">
                       About us
                     </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a href="#!" class="text-white">
+                    <a href="#!" className="text-white">
                       About Us V2
                     </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a href="#!" class="text-white">
+                    <a href="#!" className="text-white">
                       Contact Us
                     </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a href="#!" class="text-white">
+                    <a href="#!" className="text-white">
                       Our Blog
                     </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a href="#!" class="text-white">
+                    <a href="#!" className="text-white">
                       Shop
                     </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a href="#!" class="text-white">
+                    <a href="#!" className="text-white">
                       Testimonial
                     </a>
                   </p>
@@ -91,45 +91,45 @@ function Footer() {
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
 
 
-              <h6 class="text-uppercase fw-bold">Our Service</h6>
+              <h6 className="text-uppercase fw-bold">Our Service</h6>
               <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
+                className="mb-4 mt-0 d-inline-block mx-auto"
                 id="footer-space-line"
               />
               <p>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Workout
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Progression
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Nutrition
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Workout
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Progression
                 </a>
               </p>
             </MDBCol>
 
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-              <h6 class="text-uppercase fw-bold">Free Consultation</h6>
+              <h6 className="text-uppercase fw-bold">Free Consultation</h6>
               <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
+                className="mb-4 mt-0 d-inline-block mx-auto"
                 id="footer-space-line"
               />
-              <p class="">
+              <p className="">
                 Power GYM Lift is champ in providing its users with absolutely
                 everything a fitness or gym site needs
               </p>

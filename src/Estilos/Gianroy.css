@@ -58,6 +58,11 @@
     border: 1px solid #1e1e1e;
     padding-top: 70px;
     padding-bottom: 50px;
+    background-color: #1e1e1e;
+}
+
+.ParteIMC>*{
+    color: #ffffff;
 }
 
 .ParteIMC .datos-title>h3 {
@@ -107,4 +112,17 @@
     font-size: 15px;
     color: rgb(120, 123, 126);
     /* border: 1px solid red; */
+}
+
+
+/* section contacto */
+
+.ParteContacto {
+    border: 1px solid #1e1e1e;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.ParteContacto .texto p{
+    text-align: justify;
+
 }
