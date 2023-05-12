@@ -1,0 +1,107 @@
+/* Estilos para el encabezado */
+h1 {
+ font-size: 2.5rem;
+ margin-bottom: 1.5rem;
+}
+
+/* Estilos para los elementos del carrito de compras */
+.cart-items {
+
+ padding: 1rem;
+ margin-bottom: 1.5rem;
+}
+.product-imgt{
+   width: 200px;
+   height: 150px;
+   object-fit: cover;
+}
+.cart-item {
+ display: flex;
+ align-items: center;
+ margin-bottom: 1rem;
+}
+
+.cart-item img {
+ max-width: 80px;
+ margin-right: 1rem;
+}
+
+.cart-item .item-details {
+ flex: 1;
+}
+
+.cart-item .item-details h3 {
+ font-size: 1.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.cart-item .item-details p {
+ margin-bottom: 0.5rem;
+}
+
+.plan-card {
+ cursor: pointer;
+
+ border-radius: 8px;
+ padding: 1rem;
+ margin-bottom: 1rem;
+ display: flex;
+}
+
+.plan-card:hover {
+ background-color: #f5f5f5;
+}
+
+.plan-card.selected {
+ background-color: #007bff;
+ color: #fff;
+}
+
+.plan-card.selected:hover {
+ background-color: #0069d9;
+}
+
+.plan-card input[type="checkbox"] {
+ margin-right: 1rem;
+}
+
+.plan-details h3 {
+ font-size: 1.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.plan-details p {
+ margin-bottom: 0.5rem;
+}
+
+/* Estilos para el resumen del carrito de compras */
+.cart-summary {
+ border: 1px solid #ddd;
+ padding: 1rem;
+}
+
+.cart-summary p {
+ font-size: 1.2rem;
+ margin-bottom: 0.5rem;
+}
+
+.cart-summary .total {
+ font-size: 1.5rem;
+ font-weight: bold;
+}
+
+/* Estilos para el botón */
+.btn-primary {
+ background-color: #007bff;
+ border-color: #007bff;
+ color: #fff;
+ font-size: 1.5rem;
+ padding: 0.75rem 1.5rem;
+ margin-top: 1rem;
+}
+
+.btn-primary:hover {
+ background-color: #0069d9;
+ border-color: #0062cc;
+ color: #fff;
+}

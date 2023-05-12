@@ -1,0 +1,448 @@
+@font-face {
+   font-family: 'FontAwesome';
+   src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), 
+   url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), 
+   url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), 
+   url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), 
+   url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+/*==========Fonts CSS End==========*/
+
+/*==========Common CSS Start==========*/
+body{
+   font-family: 'Rubik', sans-serif;
+   overflow-x: hidden !important;
+   font-size: 15px;
+   line-height: 24px;
+   color: #10161b;
+}
+
+/*==Scrollbar==*/
+
+::-webkit-scrollbar {
+   width: 5px;
+}
+
+::-moz-scrollbar {
+ width: 5px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: #bfbfbf;
+}
+
+::-moz-scrollbar-track {
+ background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #fd3d0c;
+   border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb {
+ background: #fd3d0c;
+ border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #141b22;
+}
+
+::-moz-scrollbar-thumb:hover {
+ background: #141b22;
+}
+
+a,
+a:hover,
+a:focus {
+   text-decoration: none;
+   outline: none;
+}
+
+input,
+input:focus,
+input:hover,
+button,
+button:hover,
+button:focus {
+   outline: none;
+}
+
+section {
+   overflow: hidden;
+}
+
+img {
+   width: auto;
+   max-width: 100%;
+}
+
+p {
+   font-size: 15px;
+   line-height: 24px;
+   color: #777777;
+   font-weight: normal;
+   margin-bottom: 12px;
+}
+
+.h1-title{
+   font-family: 'Catamaran', sans-serif;
+   font-size: 80px;
+   color: #ffffff;
+   font-weight: 900;
+   line-height: 90px;
+}
+
+.h2--title{
+   font-family: 'Catamaran', sans-serif;
+   font-size: 25px;
+   color: #10161b;
+   font-weight: 800;
+  
+}
+
+.h3--title {
+   font-family: 'Catamaran', sans-serif;
+   font-size: 25px;
+   color: #10161b;
+   line-height: 35px;
+   font-weight: 800;
+}
+
+.subtitle {
+ background-color: rgb(253,61,12,0.1);
+ text-align: center;
+ border-radius: 10px;
+ padding: 15px 28px;
+ display: inline-block;
+}
+
+.h2-subtitle {
+   font-family: 'Catamaran', sans-serif;
+   font-size: 22px;
+   color: #fd3d0c;
+   line-height: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 0;
+   display: inline-block;
+}
+
+.container{
+   position: relative;
+   z-index: 5;
+}
+
+.sec-btn {
+   font-family: 'Rubik', sans-serif;
+   font-size: 15px;
+   line-height: 24px;
+   font-weight: 500;
+   overflow: hidden;
+   text-transform: uppercase;
+   color: #ffffff !important;
+   height: 60px;
+   background-color: #fd3d0c;
+   display: inline-block;
+   padding: 18px 45px;
+   border-radius: 10px;
+   transition: all ease 0.5s;
+   position: relative;
+   z-index: 1;
+}
+
+.sec-btn:hover {
+   box-shadow: 0px 10px 24px 0px rgb(253,61,12,0.2)
+}
+
+.sec-btn::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 0;
+   background-color: #141b22;
+   z-index: -1;
+   -webkit-transition: all ease 0.5s;
+   transition: all ease 0.5s;
+   border-radius: 10px;
+}
+
+.sec-btn:hover::before {
+   height: 100%;
+   bottom: auto;
+   top: 0;
+}
+
+.sec-btn-link {
+ font-family: 'Rubik', sans-serif;
+ font-size: 15px;
+ color: #fd3d0c;
+ text-transform: uppercase;
+ font-weight: 500;
+ transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+ border-bottom: solid 2px #fd3d0c;
+}
+
+.sec-btn-link:hover {
+ color: #10161b;
+ border-bottom: solid 2px #10161b;
+ transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before,
+.slick-dots li button:hover:before, 
+.slick-dots li button:focus:before {
+   display: none;
+}
+
+.slick-dots {
+   bottom: -50px;
+   font-size: 0;
+   line-height: 1;
+}
+
+.slick-dots li {
+   width: auto;
+   height: auto;
+   margin: 0 6px;
+}
+
+.slick-dots li button {
+   width: 10px;
+   height: 10px;
+   background: #d7d7d7;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+
+.slick-dots li button:hover, 
+.slick-dots li.slick-active button {
+   background: #ff5219;
+   width: 26px;
+}
+
+.form-box {
+   display: block;
+   position: relative;
+   font-size: 0;
+   line-height: 1;
+   margin-bottom: 20px;
+}
+
+.form-input {
+   width: 100%;
+   height: 60px;
+   background: #ffffff;
+   font-size: 15px;
+   font-family: 'Rubik', sans-serif;
+   line-height: 28px;
+   color: #131830;
+   border: none;
+   outline: none;
+   padding: 12px 30px;
+   border-radius: 8px;
+   box-shadow: none;
+}
+
+.toggle-button {
+ position: fixed;
+ top: 10px;
+ right: 30px;
+ width: 60px;
+ height: 60px;
+ padding: 0 15px;
+ background-color: #fd3d0c;
+ border-radius: 8px;
+ text-align: center;
+ border: none;
+ outline: none;
+ display: none;
+ z-index: 110;
+}
+
+.toggle-button span {
+ width: 30px;
+ height: 3px;
+ background: #ffffff;
+ display: block;
+ margin: 0 auto 6px auto;
+ position: relative;
+ top: 0;
+ opacity: 1;
+ float: right;
+ transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.toggle-button .toggle-width {
+ width: 25px;
+}
+
+.toggle-button span:last-child {
+ margin-bottom: 0;
+}
+
+.toggle-menu .toggle-button {
+ background-color: #141b22;
+}
+
+.toggle-menu .toggle-button span {
+ background-color: #ffffff;
+}
+
+.toggle-menu .toggle-button span:nth-child(1) {
+ transform: rotate(45deg);
+ position: relative;
+ top: 9px;
+}
+
+.toggle-menu .toggle-button span:nth-child(2) {
+ opacity: 0;
+}
+
+.toggle-menu .toggle-button span:nth-child(3) {
+ transform: rotate(-45deg);
+ position: relative;
+ top: -9px;
+}
+
+.black-shadow {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background: #000000;
+ opacity: 0.5;
+ z-index: 90;
+ display: none;
+}
+
+
+
+/*==========Pricing CSS Start==========*/
+
+
+
+.main-pricing {
+   padding-top: 120px;
+   padding-bottom: 120px;
+ }
+ 
+ .pricing-box {
+   text-align: center;
+ }
+ 
+ .pricing-title {
+   text-align: center;
+ }
+ 
+ .pricing-title-box {
+   width: 100%;
+   padding: 25px;
+   border-radius: 10px;
+   box-shadow: 0px 30px 60px 0px rgb(0,0,0,0.2);
+   text-align: left;
+ }
+ 
+ .pricing-one {
+   background-color: #fd3d0c;
+ }
+ 
+ .pricing-title-box .h3-title {
+   font-size: 20px;
+   line-height: 30px;
+   color: #ffffff;
+ }
+ 
+ .pricing-title-box .h2-title {
+   color: #ffffff;
+   font-size: 40px;
+   line-height: 40px;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   padding-top: 5px;
+ }
+ 
+ .pricing-title-box .h2-title span {
+   font-size: 15px;
+   line-height: 15px;
+ }
+ 
+ .pricing-content-box {
+   padding-top: 30px;
+   padding-left: 30px;
+   padding-right: 30px;
+ }
+ 
+ .pricing-content {
+   display: flex;
+   align-items: center;
+   justify-content: left;
+ }
+ 
+ .pricing-point ul {
+   padding-left: 0;
+   margin-bottom: 0;
+   list-style: none;
+   text-decoration: none;
+ }
+ 
+ .pricing-point ul li {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+   text-align: left;
+ }
+ 
+ .pricing-point ul li:last-child {
+   margin-bottom: 0;
+ }
+ 
+ .pricing-point ul li p {
+   margin-bottom: 0;
+   margin-left: 10px;
+ }
+ 
+ .pricing-box .sec-btn {
+   width: 100%;
+   background-color: transparent;
+   border: solid 2px #fd3d0c;
+   color: #fd3d0c !important;
+   margin-top: 30px;
+   text-align: center;
+ }
+ 
+ .pricing-box .sec-btn:hover {
+   border: solid 2px #141b22;
+ }
+ 
+ .pricing-two {
+   background-color: #141b22;
+ }
+ 
+ .pricing-three {
+   background-color: #ffffff;
+ }
+ 
+ .pricing-three .h3-title {
+   color: #10161b;
+ }
+ 
+ .pricing-three .h2-title {
+   color: #10161b;
+ }
+ 
+ .main-pricing-two {
+   position: relative;
+   background-color: #f3f5f6;
+   padding-top: 120px;
+   padding-bottom: 120px;
+ }

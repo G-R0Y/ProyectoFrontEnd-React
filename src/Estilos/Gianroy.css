@@ -1,10 +1,10 @@
 /* section pay */
 
-.PartePagos {
+/* .PartePagos {
     border: 1px solid #1e1e1e;
     padding-top: 45px;
     padding-bottom: 25px;
-}
+} */
 
 .PartePagos .title {
 
@@ -14,10 +14,10 @@
 
 .PartePagos .cartilla-pago {
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.356);
+  
     border-radius: 15px;
     transition: .3s;
-    background-color: #ffffff;
+
 }
 
 .PartePagos .cartilla-pago:hover {

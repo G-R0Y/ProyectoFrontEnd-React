@@ -1,6 +1,32 @@
-/* ul{
+ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: left;
-} */
+    /* text-align: left; */
+}
+.logo-footer img{
+    height: 100px;
+}
+.cel{
+    border-top: solid 2px red;
+    border-right: solid 2px red;
+    border-left: solid 2px red;
+    display: flex;
+    justify-content:space-between;
+    padding-right: 45px;
+    align-items: center ;
+    margin-bottom: 10px;
+}
+.cel .phone{
+    color: white;
+    height: 100%;
+    padding: 20px;
+    background-color: red;
+}
+.text-white{
+    text-decoration: none;
+}
+#footer-space-line{
+    border: solid 4px rgb(255, 0, 0);
+    width: 60px;
+}

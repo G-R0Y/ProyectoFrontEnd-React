@@ -1,30 +1,54 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import "../Estilos/colorpago.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 const CartillaPago = (data) => {
+   const valor = { ...data.data };
 
-    const valor = { ...data.data }
-
-    return (
-        <>
-            <div className="pay-title">
-                <h5 className="mb-3">{valor.tipo}</h5>
-                <h4 >$ {valor.precio}<span className="span">.90/mes</span></h4>
+   return (
+      <Container>
+         <Row>
+            <div className="pricing-box wow fadeInUp" data-wow-delay=".5s">
+               <div className="pricing-title-box pricing-one">
+                  <h3 className="h3--title">{valor.tipo}</h3>
+                  <h2 className="h2--title">
+                     $ {valor.precio}
+                     <span>/Month</span>
+                  </h2>
+               </div>
+               <div className="pricing-content-box">
+                  <div className="pricing-content">
+                     <div className="pricing-point">
+                        <ul>
+                           {valor.icon.map((items, i) => {
+                              return (
+                                 <li key={i}>
+                                    <FontAwesomeIcon
+                                       icon={valor.icon[i]}
+                                       color={valor.color[i]}
+                                       className="FontAwesomeIcon"
+                                    />
+                                    {valor.desc[i]}
+                                 </li>
+                              );
+                           })}
+                        </ul>
+                     </div>
+                  </div>
+                  <Link to="/CartContainer">
+                     <button
+                        className="sec-btn  "
+                        onClick={() => handleClick(`Premium${valor.tipo}`)}
+                     >
+                        Select Premium
+                     </button>
+                  </Link>
+               </div>
             </div>
-            <div className="my-4 pay-body">
-                <ul>
-                    {valor.icon.map((items, i) => {
-                        return (
-                            <li key={i}><FontAwesomeIcon icon={valor.icon[i]} color={valor.color[i]} className='FontAwesomeIcon' />{valor.desc[i]}</li>
-                        )
-                    })}
+         </Row>
+      </Container>
+   );
+};
 
-                </ul>
-            </div>
-            <div className="d-flex justify-content-center pay-btn">
-                <button className="btn btn-danger">Unete Ahora</button>
-            </div>
-        </>
-    )
-}
-
-export default CartillaPago
+export default CartillaPago;
