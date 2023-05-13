@@ -1,34 +1,33 @@
 import React from "react";
 import "../Estilos/Juan.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import imgLogo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 function Header() {
    return (
       <>
-         <section className="top-nav" id="home">
+         <section className="top-nav section" id="home">
             <div className="container">
                <div className="row justify-content-between">
                   <div className="col-auto">
                      <p>
                         {" "}
-                        <i className="bx bxs-location-plus"></i> 27 Division St,
-                        New York, USA
+                        <i className="bx bxs-location-plus"></i> Av. Marsano 587, Miraflores
                      </p>
                      <p>
                         {" "}
-                        <i className="bx bxs-phone-call"></i> +1 (044) 123 456
-                        789
+                        <i className="bx bxs-phone-call"></i> +51 998 685 222
                      </p>
                   </div>
                   <div className="col-auto social-icons">
-                     <a href="#">
+                     <a href="#" className="a">
                         <i className="bx bxl-facebook"></i>
                      </a>
-                     <a href="#">
+                     <a href="#" className="a">
                         <i className="bx bxl-twitter"></i>
                      </a>
-                     <a href="#">
+                     <a href="#" className="a">
                         <i className="bx bxl-instagram"></i>
                      </a>
                   </div>
@@ -38,8 +37,8 @@ function Header() {
 
          <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
             <div className="container">
-               <a className="navbar-brand" href="#">
-                  Activa Gym<span className="dot">.</span>
+               <a className="navbar-brand a" href="#">
+                  <img src={imgLogo} alt="Logo" className="img-logo" />
                </a>
                <button
                   className="navbar-toggler"
@@ -56,31 +55,31 @@ function Header() {
                   <ul className="navbar-nav ms-auto">
                      <li className="nav-item">
                         <Link
-                           className="nav-link active"
+                           className="nav-link active a"
                            // aria-current="page"
                            to="/"
                         >
-                           Home
+                           Inicio
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link" to="/About">
-                           About
+                        <Link className="nav-link a" to="/About">
+                           Acerca de
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link" to="/CartContainer">
-                           Services
+                        <Link className="nav-link a" to="/CartContainer">
+                           Servicios
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#portfolio">
-                           Portfolio
+                        <a className="nav-link a" href="#portfolio">
+                           Portafolio
                         </a>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#team">
-                           Team
+                        <a className="nav-link a" href="#team">
+                           Equipo
                         </a>
                      </li>
                      {/* <li className="nav-item">
@@ -89,19 +88,19 @@ function Header() {
                         </a>
                      </li> */}
                      <li className="nav-item">
-                        <a className="nav-link" href="#blog">
+                        <a className="nav-link a" href="#blog">
                            Blog
                         </a>
                      </li>
                   </ul>
-                  <a
+                  {/* <a
                      href="#"
                      data-bs-toggle="modal"
                      data-bs-target="#exampleModal"
-                     className="btn btn-brand ms-lg-3"
+                     className="btn btn-brand ms-lg-3 a"
                   >
                      <i className="fa-solid fa-user"></i>
-                  </a>
+                  </a> */}
                </div>
             </div>
          </nav>
