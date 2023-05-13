@@ -15,13 +15,13 @@
 
 .col-auto p {
     font-size: 13px;
-    color: var(--body);
+    color: var(--body) !important;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6,
 .display-1, .display-2, .display-3, .display-4 {
     font-weight: 700;
-    color: var(--dark);
+    color: var(--dark) !important;
 }
 
 .bg-cover {
@@ -35,13 +35,13 @@
 }
 
 .a {
-    color: var(--dark);
+    color: var(--dark) !important;
     transition: all 0.4s ease;
     font-weight: 500;
 }
 
 .a:hover {
-    color: var(--brand);
+    color: var(--brand) !important;
 }
 
 .section {
@@ -130,13 +130,13 @@
 
 .slideshow .display-3 {
     text-transform: uppercase;
-    color: #fff;
+    color: #fff !important;
 }
 
 /* navbar */
 .top-nav {
-    background-color: var(--brand);
-    color: #fff;
+    background-color: var(--brand) !important;
+    color: #fff !important;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -160,8 +160,8 @@
     width: 28px;
     height: 28px;
     display: inline-flex;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.25) !important;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -169,8 +169,8 @@
 }
 
 .social-icons a:hover {
-    background-color: #fff;
-    color: var(--brand);
+    background-color: #fff !important;
+    color: var(--brand) !important;
 }
 
 .conditions-section {
@@ -178,7 +178,7 @@
 }
 
 .conditions-section a {
-    color: #fff;
+    color: #fff !important;
     margin: 0 10px;
 }
 
@@ -199,10 +199,6 @@
     font-weight: 700;
 }
 
-.navbar-brand .dot {
-    color: var(--brand);
-}
-
 .btn {
     padding: 8px 26px;
 }
@@ -217,6 +213,8 @@
     background-color: #d64022 !important;
     border-color: #d64022 !important;
     color: #fff !important;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 /*--------------------------------------------------------------
@@ -267,8 +265,8 @@
 
 .benefit .benefit-img::after {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 115px;
+    bottom: 18px;
     width: 50px;
     height: 50px;
     z-index: 2;
@@ -288,7 +286,7 @@
 }
 
 .benefit .benefit-img:hover::after {
-    right: 150px;
+    right: 105px;
     bottom: 10px;
 }
 
@@ -357,7 +355,7 @@
 
 .benefit-block strong {
     position: relative;
-    color: #222222;
+    color: #222222 !important;
     font-size: 24px;
     font-weight: 600;
     color: black;
@@ -365,7 +363,7 @@
 
 .benefit-block .feature-text {
     position: relative;
-    color: #555555;
+    color: #555555 !important;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7em;

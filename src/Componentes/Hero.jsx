@@ -18,7 +18,7 @@ const Hero = () => {
                         <br />
                         DE LA CIUDAD
                      </h1>
-                  <a href="#" className="btn btn-brand a">
+                  <a href="#" className="btn btn-brand btn-lg a">
                      Empecemos
                      </a>
                </div>
