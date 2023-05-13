@@ -73,9 +73,9 @@ function Header() {
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link a" href="#portfolio">
+                     <Link className="nav-link a" to="/Portafolio">
                            Portafolio
-                        </a>
+                        </Link>
                      </li>
                      <li className="nav-item">
                         <a className="nav-link a" href="#team">
