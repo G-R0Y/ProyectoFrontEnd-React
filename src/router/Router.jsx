@@ -30,6 +30,7 @@ const Router = () => {
                <Route path="/checkout" element={<PagPago />} />
             </Route> */}
          </Routes>
+         
       </BrowserRouter>
    );
 };
