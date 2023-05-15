@@ -16,6 +16,7 @@ import { HomeUserRegister } from "../Pages/HomeUserRegister.jsx";
 import { ProtectedRouter } from "../Componentes/protectedRouter.jsx";
 import Navbar from "../Componentes/navbarHomeRegister.jsx";
 import Portofolio from "../Pages/Portofolio.jsx";
+import Details from "../Componentes/details.jsx";
 // import Login from "../Login/index";
 
 const Router = () => {
@@ -44,6 +45,7 @@ const Router = () => {
             <Route path="/About" element={<About />} />
             <Route path="/CartContainer" element={<CartContainer />} />
             <Route path="/Portofolio" element={<Portofolio />} />
+            <Route path="/details" element={<Details />} />
             <Route path="/cancel" element={<Cancel />} />
             {/* rutas privadas */}
 

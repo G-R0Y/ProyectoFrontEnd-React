@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../Componentes/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Estilos/portafolio.css";
+import { Link } from "react-router-dom";
 
 const Portofolio = () => {
   return (
@@ -32,10 +32,11 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/1-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
                           <button type="button" class="btn btn-outline-danger">
-                            <svg
+                          <Link className="nav-link" to="/Details">
+                          <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="30"
                               height="30"
@@ -48,6 +49,8 @@ const Portofolio = () => {
                                 d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
                               />
                             </svg>
+                          </Link>
+                            
                           </button>
 
                           <h2 className="card-text">Rutina de Piernas/Abs</h2>
@@ -64,7 +67,7 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/2-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
                           <button type="button" class="btn btn-outline-danger">
                             <svg
@@ -96,7 +99,7 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/3-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
                           <button type="button" class="btn btn-outline-danger">
                             <svg
@@ -126,14 +129,14 @@ const Portofolio = () => {
               </div>
               <div className="row">
                 <div className="col-lg-4">
-                  <div className="card text-bg-dark">
+                  <div className="card text-bg-dark ">
                     <div
                       className="portfolio-detail-img-cfw three wow fadeInDown"
                       data-wow-delay=".5s"
                     >
                       <img src="../src/assets/img/4-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
                           <button type="button" class="btn btn-outline-danger">
                             <svg
@@ -165,7 +168,7 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/5-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
                           <button type="button" class="btn btn-outline-danger">
                             <svg
@@ -197,7 +200,7 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/6-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
                           <button type="button" class="btn btn-outline-danger">
                             <svg
