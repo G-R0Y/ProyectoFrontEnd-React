@@ -11,8 +11,6 @@ function Register() {
    const [user, setUser] = useState({
       email: "",
       password: "",
-      name: "",
-      lastName: "",
    });
    // agregango un estado para el error para setearlo para  que se muestre el cambio en pantall
    const [error, setError] = useState("");

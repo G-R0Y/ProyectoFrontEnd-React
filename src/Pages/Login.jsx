@@ -12,10 +12,8 @@ function Login() {
       password: "",
    });
    // agregango un estado para el error para setearlo para  que se muestre el cambio en pantall
-   const [email, setEmail] = useState(null);
-   const [password, setPassword] = useState(null);
+
    const [error, setError] = useState("");
-   const [loading, setLoading] = useState(false);
 
    // extrayendo el objeto signup del hook context
    const { login, loginWithGoogle, resetPassword } = useAuth();
@@ -24,17 +22,8 @@ function Login() {
    const navigate = useNavigate();
 
    // leyendo los eventos de los imputs
-   const handleInputChange = ({ target: { name, value } }) => {
+   const handleChange = ({ target: { value, name } }) =>
       setUser({ ...user, [name]: value });
-   };
-
-   const validateData = (email, password) => {
-      if (!email) return false;
-
-      if (!password) return false;
-
-      return true;
-   };
 
    const closeAlert = () => {
       setError(null);
@@ -42,25 +31,14 @@ function Login() {
 
    // para que no se refresqye la pagina
    // trasnformando a asyncrono
-   const handleSubmit = async (event) => {
-      event.preventDefault();
-      console.log("probando login");
-
-      if (validateData(email, password)) {
-         login(email, password)
-            .then((result) => {
-               console.log(
-                  "se ha autenticado el usaurio correctamente ",
-                  result
-               );
-               router.push("/");
-            })
-            .catch((err) => {
-               console.log(err);
-               setError(err.message);
-            });
-      } else {
-         setError("Datos de formulario incorrectos, pruebe otra vez");
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+      setError("");
+      try {
+         await login(user.email, user.password);
+         navigate("/homeuser");
+      } catch (error) {
+         setError(error.message);
       }
    };
    // para el login con google
@@ -122,9 +100,7 @@ function Login() {
                                              className="form-control-user"
                                              aria-describedby="emailHelp"
                                              placeholder="Enter Email Address..."
-                                             onChange={(event) =>
-                                                setEmail(event.target.value)
-                                             }
+                                             onChange={handleChange}
                                           />
                                        </Form.Group>
                                        <hr />
@@ -134,9 +110,7 @@ function Login() {
                                              className="form-control-user"
                                              id="exampleInputPassword"
                                              placeholder="Password"
-                                             onChange={(event) =>
-                                                setPassword(event.target.value)
-                                             }
+                                             onChange={handleChange}
                                           />
                                        </Form.Group>
                                        <hr />
