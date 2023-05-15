@@ -3,11 +3,9 @@ import React from "react";
 const cancel = () => {
    return (
       <>
-         <div className="d-flex align-items-center" style={{marginTop:50, marginBottom:200}}>
-            <span className="text-danger me-2">
-               <i className="fas fa-times-circle"></i>
-            </span>
-            <p className="mb-0" >No se pudo procesar tu pago</p>
+         <div className="d-flex justify-content-center align-items-center flex-column" style={{ marginTop: 50, marginBottom: 200 }}>
+            <i className="fa fa fa-times-circle fa-5x text-fail mb-3" ></i>
+            <p className="h3 text-center mb-3" >No se pudo procesar tu pago</p>
          </div>
          {/* <a href="/" className="btn btn-primary mt-3">
             Ir al inicio
