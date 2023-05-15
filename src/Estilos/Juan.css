@@ -370,3 +370,147 @@
     margin-top: 3px;
     color: black;
 }
+
+/*--------------------------------------------------------------
+  # Team
+  --------------------------------------------------------------*/
+
+.team-section {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0px 90px;
+    background: #222429 url(../assets/img/pa-1.png) center top repeat;
+}
+
+.team-section .side-text {
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    opacity: 0.20;
+    font-size: 170px;
+    color: transparent;
+    font-weight: 700;
+    transform: rotate(-90deg);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    text-transform: uppercase;
+    transform-origin: 42% -1680%;
+}
+
+.team-block {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.team-block .inner-box {
+    position: relative;
+    padding-left: 100px;
+}
+
+.team-block .inner-box .image {
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.team-block .inner-box .image img {
+    position: relative;
+    width: 100%;
+    display: block;
+    transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -webkit-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+}
+
+.team-block .inner-box:hover .image img {
+    opacity: 0.5;
+    transform: scale(1.04, 1.04);
+}
+
+.team-block .inner-box .content {
+    position: absolute;
+    left: 10px;
+    bottom: 22px;
+    padding: 15px 30px;
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+
+.team-block .inner-box .content:before {
+    position: absolute;
+    content: '';
+    left: -2px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background-color: #ff0000;
+}
+
+.team-block .inner-box .content .title {
+    position: relative;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-block .inner-box .content .name {
+    position: relative;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/*** 
+
+====================================================================
+	Section Title
+====================================================================
+
+***/
+
+.sec-title {
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.sec-title .title {
+    position: relative;
+    color: #555555;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sec-title h2 {
+    position: relative;
+    color: #222222;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.sec-title.light .title,
+.sec-title.light h2 {
+    color: #ffffff;
+}
+
+.sec-title.centered {
+    text-align: center;
+}
+
+.sec-title.left {
+    text-align: left;
+}
+
+.sec-title.right {
+    text-align: right;
+}

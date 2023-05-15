@@ -38,7 +38,7 @@ function Header() {
          <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
             <div className="container">
                <Link className="navbar-brand" href="#">
-                  Activa Gym<span className="dot">.</span>
+                  <img src={imgLogo} alt="Logo" className="img-logo" />
                </Link>
                <button
                   className="navbar-toggler"
