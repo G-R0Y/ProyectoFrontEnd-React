@@ -14,25 +14,25 @@ function Footer() {
   return (
     <MDBFooter className="footer_r" color="white">
       <MDBContainer className="p-4">
-        <section className="">
+        <section className="text-white">
           <MDBRow>
-            <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
+            <MDBCol lg="3" md="6" className="mb-4 mb-md-0 ">
               <div className="logo-footer">
                 <img src="../src/assets/logo.png" alt="Icon-Logo" />
               </div>
               <hr
-                className="mb-4 mt-0 d-inline-block mx-auto"
+                className="mb-4 mt-0 d-inline-block mx-auto "
                 id="footer-space-line"
               />
-              <p>
-                <i className="fas fa-home mr-3"></i> 27 Division St, New York,
+              <p className="text-white">
+                <i className="fas fa-home mr-3 text-white"></i> 27 Division St, New York,
                 United State America
+              </p >
+              <p className="text-white">
+                <i className="fas fa-phone mr-3 text-white"></i> +1 (044) 123 456 789
               </p>
-              <p>
-                <i className="fas fa-phone mr-3"></i> +1 (044) 123 456 789
-              </p>
-              <p>
-                <i className="fas fa-envelope mr-3"></i> info@example.com
+              <p className="text-white">
+                <i className="fas fa-envelope mr-3 text-white"></i> info@example.com
               </p>
             </MDBCol>
 
@@ -119,7 +119,7 @@ function Footer() {
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 id="footer-space-line"
               />
-              <p className="">
+              <p className="text-white">
                 Power GYM Lift is champ in providing its users with absolutely
                 everything a fitness or gym site needs
               </p>
