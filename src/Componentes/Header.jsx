@@ -73,8 +73,8 @@ function Header() {
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link" to="/portfolio">
-                           Portfolio
+                        <Link className="nav-link" to="/Portofolio">
+                           Portofolio
                         </Link>
                      </li>
                      {/* <li className="nav-item">
