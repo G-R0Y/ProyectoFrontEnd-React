@@ -84,7 +84,7 @@ function Register() {
                <Row className="justify-content-center">
                   <Col xl={10} lg={12} md={9}>
                      <Card border="0" className="shadow-lg my-5">
-                        <Card.Body className="p-0">
+                        <Card.Body className="p-0 d-block">
                            <Row>
                               <Col
                                  lg={6}
