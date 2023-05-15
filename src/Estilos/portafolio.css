@@ -391,7 +391,7 @@ p {
 .main-inner-banner {
   position: relative;
   padding-top: 228px;
-  padding-bottom: 135px;
+  padding-bottom: 50px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4134,8 +4134,8 @@ section.main-video {
 
 /*==========Portfolio Detail Page CSS Start==========*/
 .main-portfolio-detail {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .portfolio-detail-title-box {

@@ -4,6 +4,7 @@ import Hero from "../Componentes/Hero";
 import Footer from "../Componentes/Footer";
 
 import ParteBeneficios from "../Pages/PagInicio/ParteBeneficios";
+import ParteTeam from "../Pages/PagInicio/ParteTeam";
 import ParteIMC from "../Pages/PagInicio/ParteIMC";
 import PartePagos from "../Pages/PagInicio/PartePagos";
 import ParteContacto from "../Pages/PagInicio/ParteContacto";
@@ -13,7 +14,7 @@ const RouterHome = () => {
       <>
          <Hero />
          <ParteBeneficios />
-         <PartePagos />
+         <ParteTeam />
          <ParteIMC />
          <ParteContacto />
       </>

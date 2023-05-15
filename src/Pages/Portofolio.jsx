@@ -32,9 +32,9 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/1-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
-                          <button type="button" class="btn btn-outline-danger">
+                          <button  class="btn btn-outline-danger">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="30"
@@ -64,9 +64,9 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/2-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
-                          <button type="button" class="btn btn-outline-danger">
+                          <button  class="btn btn-outline-danger">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="30"
@@ -96,9 +96,9 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/3-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
-                          <button type="button" class="btn btn-outline-danger">
+                          <button  class="btn btn-outline-danger">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="30"
@@ -133,9 +133,9 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/4-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
-                          <button type="button" class="btn btn-outline-danger">
+                          <button  class="btn btn-outline-danger">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="30"
@@ -165,9 +165,9 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/5-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
-                          <button type="button" class="btn btn-outline-danger">
+                          <button  class="btn btn-outline-danger">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="30"
@@ -197,9 +197,9 @@ const Portofolio = () => {
                     >
                       <img src="../src/assets/img/6-1-370x370.jpg" alt="Portfolio" />
 
-                      <div className="card-img-overlay">
+                      <div className="card-img-overlay d-flex align-items-end">
                         <div className="card-body">
-                          <button type="button" class="btn btn-outline-danger">
+                          <button  class="btn btn-outline-danger">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="30"

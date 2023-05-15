@@ -123,10 +123,11 @@ function Footer() {
                 Power GYM Lift is champ in providing its users with absolutely
                 everything a fitness or gym site needs
               </p>
-              <div className="cel">
-                <MDBIcon fas icon="phone-alt" className="phone" />
-                <h4 className="numero">1-800-643-430</h4>
+              <div className="cel text-center">
+                <MDBIcon fas icon="phone-alt" className="phone ms-3" />
+                <span className="numero">+51 999 999 999</span>
               </div>
+
               <section className="mb-4">
                 <MDBBtn
                   outline

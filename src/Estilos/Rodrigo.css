@@ -16,12 +16,10 @@ ul{
     height: 100px;
 }
 .cel{
-    border-top: solid 2px red;
-    border-right: solid 2px red;
-    border-left: solid 2px red;
+    border: solid 2px red;
     display: flex;
     justify-content:space-between;
-    padding-right: 45px;
+    padding-right: 45px; 
     align-items: center ;
     margin-bottom: 10px;
 }
@@ -30,6 +28,7 @@ ul{
     height: 100%;
     padding: 20px;
     background-color: red;
+    margin: 5px;
 }
 .text-white{
     text-decoration: none;

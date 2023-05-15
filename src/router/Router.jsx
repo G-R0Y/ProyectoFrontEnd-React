@@ -6,14 +6,14 @@ import Header from "../Componentes/Header.jsx";
 
 import RouterHome from "./RouterHome";
 import Footer from "../Componentes/Footer";
-import Succes from "../Componentes/succes";
+import Succes from "../Componentes/succes.jsx";
 import Cancel from "../Componentes/cancel.jsx";
 import CartContainer from "../pasarela/CartContainer.jsx";
 import { AuthProvider } from "../Contexts/AuthContext.jsx";
 import Login from "../Pages/Login.jsx";
 import Register from "../Componentes/Register.jsx";
 import { HomeUserRegister } from "../Pages/HomeUserRegister.jsx";
-import { ProtectedRouter } from "../Componentes/protectedRouter.jsx";
+import { ProtectedRouter } from "../Componentes/ProtectedRouter.jsx";
 import Navbar from "../Componentes/navbarHomeRegister.jsx";
 import Portofolio from "../Pages/Portofolio.jsx";
 // import Login from "../Login/index";
@@ -41,10 +41,11 @@ const Router = () => {
             {/* rtutas publicas */}
             {/* <Route path="/" element={<App />} /> */}
             <Route path="/" element={<RouterHome />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/CartContainer" element={<CartContainer />} />
-            <Route path="/Portofolio" element={<Portofolio />} />
-            <Route path="/cancel" element={<Cancel />} />
+            <Route path="/Nosotros" element={<About />} />
+            <Route path="/Subscripcion" element={<CartContainer />} />
+            <Route path="/Portfalio" element={<Portofolio />} />
+            <Route path="/Succes" element={<Succes />} />
+            <Route path="/Cancel" element={<Cancel />} />
             {/* rutas privadas */}
 
             {/* <Route element={<Private />}>

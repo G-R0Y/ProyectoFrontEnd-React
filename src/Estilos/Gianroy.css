@@ -14,7 +14,7 @@
 
 .PartePagos .cartilla-pago {
     padding: 20px;
-  
+
     border-radius: 15px;
     transition: .3s;
 
@@ -61,7 +61,7 @@
     background-color: #1e1e1e;
 }
 
-.ParteIMC>*{
+.ParteIMC>* {
     color: #ffffff;
 }
 
@@ -122,7 +122,155 @@
     padding-top: 70px;
     padding-bottom: 50px;
 }
-.ParteContacto .texto p{
+
+.ParteContacto .texto p {
     text-align: justify;
 
 }
+
+/* About */
+.About {
+    padding: 0;
+}
+
+.About .first {
+    position: relative;
+    background-color: #1e1e1e;
+}
+
+.About .first .img1 {
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    animation: sun 4s linear infinite;
+}
+
+@keyframes sun {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.About .first .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.About .first .part1 {
+    color: #ffffff;
+    padding: 100px 20px;
+
+}
+
+.About .first .part1 .title {
+    padding: 15px;
+    background-color: #2d3239;
+    border-radius: 10px;
+}
+
+.About .first .part1 .contenido {
+    text-shadow:
+        1px 0px 0px rgb(221, 90, 15),
+        -1px 0px 0px rgb(221, 90, 15),
+        0px 1px 0px rgb(221, 90, 15),
+        0px -1px 0px rgb(221, 90, 15);
+    color: #2d3239;
+    font-size: 30px;
+}
+
+
+.About .first .part1 .title span {
+    padding: 8px;
+    background-color: #fd3d0c;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+
+.About .part2 {
+    position: relative;
+}
+
+.About .part2 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.About .part2 div:nth-child(2) {
+    animation: giro 5s infinite linear;
+}
+
+.About .part2 div:nth-child(3) {
+    animation: giro 5s infinite linear reverse;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.About .second {
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.About .second .fitnes {
+    background-color: #fd3d0c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.About .second .fitnes img {
+    animation: fit 2s infinite linear;
+}
+
+@keyframes fit {
+    0% {
+        transform: translateY(100px);
+    }
+
+    50% {
+        transform: translateY(75px);
+    }
+
+    75% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+.About .second .part3 h1 {
+    text-align: center;
+}
+
+.About .second .part3 h3 {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.About .third {
+    padding-top: 50px;
+}
+

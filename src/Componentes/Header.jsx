@@ -17,7 +17,7 @@ function Header() {
                      </p>
                      <p>
                         {" "}
-                        <i className="bx bxs-phone-call"></i> +51 998 685 222
+                        <i className="bx bxs-phone-call"></i> +51 999 999 999
                      </p>
                   </div>
                   <div className="col-auto social-icons">
@@ -37,8 +37,8 @@ function Header() {
 
          <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
             <div className="container">
-               <Link className="navbar-brand" href="#">
-                  Activa Gym<span className="dot">.</span>
+               <Link className="navbar-brand" to="/">
+                  <img src={imgLogo} alt="Logo" className="img-logo" />
                </Link>
                <button
                   className="navbar-toggler"
@@ -54,27 +54,23 @@ function Header() {
                <div className="collapse navbar-collapse" id="navbarNav">
                   <ul className="navbar-nav ms-auto">
                      <li className="nav-item">
-                        <Link
-                           className="nav-link active a"
-                           // aria-current="page"
-                           to="/"
-                        >
+                        <Link className="nav-link active a" to="/">
                            Inicio
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link a" to="/About">
-                           Acerca de
+                        <Link className="nav-link a" to="/Nosotros">
+                        Nosotros
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link a" to="/CartContainer">
-                           Servicios
+                        <Link className="nav-link a" to="/Subscripcion">
+                        Subscripcion
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link" to="/Portofolio">
-                           Portofolio
+                        <Link className="nav-link" to="/Portfalio">
+                           Portfolio
                         </Link>
                      </li>
                      {/* <li className="nav-item">
