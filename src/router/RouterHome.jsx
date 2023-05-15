@@ -15,7 +15,6 @@ const RouterHome = () => {
          <Hero />
          <ParteBeneficios />
          <ParteTeam />
-         <PartePagos />
          <ParteIMC />
          <ParteContacto />
       </>

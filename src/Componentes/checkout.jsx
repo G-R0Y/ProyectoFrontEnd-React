@@ -18,11 +18,14 @@ const getStripe = () => {
    return stripePromise;
 };
 
-const Checkout = () => {
+const Checkout = (props) => {
+const {valorTipo}=props
+
    const [stripeError, setStripeError] = useState(null);
    const [isLoading, setLoading] = useState(false);
    const item = {
-      price: "price_1N4oZqHknI8T06BLGHi5PV7p",
+      price: 
+      valorTipo==="Básico"?"price_1N4oZqHknI8T06BLGHi5PV7p":(valorTipo==="Estandar"?"price_1N4oWdHknI8T06BLpAMbl0Ia":"price_1N4oTSHknI8T06BLKzE3Rw0T"),
       quantity: 1,
    };
 
@@ -50,18 +53,19 @@ const Checkout = () => {
    return (
       <div className="checkout">
          <button
-            className="checkout-button"
+            className="sec-btn "
             onClick={redirectToCheckout}
             disabled={isLoading}
          >
-            <div className="grey-circle">
+            {valorTipo}
+            {/* <div className="grey-circle">
                <div className="purple-circle">
                   <img className="icon" src={CardIcon} alt="credit-card-icon" />
                </div>
             </div>
             <div className="text-container">
                <p className="text">{isLoading ? "Loading..." : "Buy"}</p>
-            </div>
+            </div> */}
          </button>
       </div>
    );

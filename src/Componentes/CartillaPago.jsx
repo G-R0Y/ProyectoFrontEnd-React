@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "../Estilos/colorpago.css";
 import { Container, Row, Col } from "react-bootstrap";
+import Checkout from "./checkout";
 
 const CartillaPago = (data) => {
    const valor = { ...data.data };
@@ -13,8 +14,8 @@ const CartillaPago = (data) => {
                <div className="pricing-title-box pricing-one">
                   <h3 className="h3--title">{valor.tipo}</h3>
                   <h2 className="h2--title">
-                     $ {valor.precio}
-                     <span>/Month</span>
+                     S/. {valor.precio}
+                     <span> por Mes</span>
                   </h2>
                </div>
                <div className="pricing-content-box">
@@ -36,14 +37,18 @@ const CartillaPago = (data) => {
                         </ul>
                      </div>
                   </div>
-                  <Link to="/CartContainer">
-                     <button
+                  {/* <Link> */}
+
+                     {/* <button
                         className="sec-btn  "
                         onClick={() => handleClick(`Premium${valor.tipo}`)}
                      >
-                        Select Premium
-                     </button>
-                  </Link>
+                        {valor.tipo}
+                     </button> */}
+
+                     <Checkout valorTipo={valor.tipo}/>
+
+                  {/* </Link> */}
                </div>
             </div>
          </Row>

@@ -10,17 +10,22 @@ const Hero = () => {
                <div className="col-12 text-center text-white">
                   <h2 className="text-white text-uppercase h2">
                      LA VIDA ES UNA CARRERA
-                     </h2>
+                  </h2>
                   <h1 className="display-3 my-4 h1">
                      EL MEJOR
-                        <br />
-                        LUGAR FITNESS
-                        <br />
-                        DE LA CIUDAD
-                     </h1>
-                  <a href="#" className="btn btn-brand btn-lg a">
+                     <br />
+                     LUGAR FITNESS
+                     <br />
+                     DE LA CIUDAD
+                  </h1>
+
+                  {/* <Link className="nav-link" to="/Portfalio">
+                           Portfolio
+                        </Link> */}
+
+                  <a  className="btn btn-brand btn-lg a" href="/Subscripcion">
                      Empecemos
-                     </a>
+                  </a>
                </div>
             </div>
          </div>

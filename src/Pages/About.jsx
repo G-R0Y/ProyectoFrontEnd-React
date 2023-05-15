@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Footer from "../Componentes/Footer";
+import React, { useEffect } from 'react';
 import img1 from "../assets/img/blur-1.png"
 import img2 from "../assets/img/banner-overlay.png"
 import img3 from "../assets/img/banner-img-1.png"
@@ -7,13 +6,10 @@ import img4 from "../assets/img/banner-circle-two.png"
 import img5 from "../assets/img/banner-circle-one.png"
 import img6 from "../assets/img/about-img-one.png"
 import img7 from "../assets/img/fitness.png"
+import ParteTeam from './PagInicio/ParteTeam';
 
-
-
+  
 const About = () => {
-   
-   const handleOnDragStart = (e) => e.preventDefault()
-
    return (
 
       <>
@@ -86,31 +82,15 @@ const About = () => {
             </div>
 
             <div className="third">
-               <div className="row">
-                  <div className="col-lg-10">
-                     <h1>Nuestros Entrenadores  </h1>
-                     <div>
-                       
+               
+               <ParteTeam />
 
-                     
-                        
-                      
-                        
-
-
-                     </div>
-                  </div>
-               </div>
             </div>
 
 
          </section>
-         {/* <Footer /> */}
 
       </>
-
-
-
    );
 };
 

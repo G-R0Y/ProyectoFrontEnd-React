@@ -4,8 +4,8 @@ import CartillaPago from "../../Componentes/CartillaPago";
 
 const precios = [
    {
-      tipo: "Basico",
-      precio: 59,
+      tipo: "Básico",
+      precio: 49.9,
       cartel: ["#fd3d0c;"],
       icon: [faCheck, faXmark, faXmark, faXmark, faXmark],
       color: ["#26d723", "#d72323", "#d72323", "#d72323", "#d72323"],
@@ -19,7 +19,7 @@ const precios = [
    },
    {
       tipo: "Estandar",
-      precio: 79,
+      precio: 79.9,
       icon: [faCheck, faCheck, faCheck, faXmark, faXmark],
       color: ["#26d723", "#26d723", "#26d723", "#d72323", "#d72323"],
       desc: [
@@ -32,7 +32,7 @@ const precios = [
    },
    {
       tipo: "Premium",
-      precio: 99,
+      precio: 99.9,
       icon: [faCheck, faCheck, faCheck, faCheck, faCheck],
       color: ["#26d723", "#26d723", "#26d723", "#26d723", "#26d723"],
       desc: [

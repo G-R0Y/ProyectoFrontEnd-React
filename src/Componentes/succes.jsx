@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../Pages/About";
+
 const Succes = () => {
    return (
       <div class="d-flex justify-content-center align-items-center flex-column">
