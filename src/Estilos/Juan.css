@@ -7,20 +7,21 @@
 
 }
 
-body {
+/*body {
     font-family: "Be Vietnam Pro", sans-serif;
     color: var(--body);
     line-height: 1.7;
-}
+}*/
 
 .col-auto p {
     font-size: 13px;
+    color: var(--body) !important;
 }
 
-h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
 .display-1, .display-2, .display-3, .display-4 {
     font-weight: 700;
-    color: var(--dark);
+    color: var(--dark) !important;
 }
 
 .bg-cover {
@@ -29,21 +30,21 @@ h1, h2, h3, h4, h5, h6,
     background-repeat: no-repeat;
 }
 
-img {
-    width: 100%;
+.img-logo {
+    width: 35%;
 }
 
-a {
-    color: var(--dark);
+.a {
+    color: var(--dark) !important;
     transition: all 0.4s ease;
     font-weight: 500;
 }
 
-a:hover {
-    color: var(--brand);
+.a:hover {
+    color: var(--brand) !important;
 }
 
-section {
+.section {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -92,7 +93,7 @@ section {
 
 
 /* slide */
-.slide {
+.slideshow {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -100,36 +101,42 @@ section {
     position: relative;
 }
 
-.slide1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/img/bbb-44.jpg);
+.slidefirst {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/img/bbb-44.jpg); */
+    background-position: center center;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+
+    backface-visibility: hidden;
+    animation: imagen_fondo 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(../assets/img/bbb-33.jpg);
 }
 
-.slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/img/bbb-66.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@keyframes imagen_fondo {
+    25% {
+        background-image: url(../assets/img/bbb-44.jpg);
+    }
+
+    50% {
+        background-image: url(../assets/img/bbb-55.jpg);
+    }
+
+    75% {
+        background-image: url(../assets/img/bbb-66.jpg);
+    }
 }
 
-.slide3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/img/bbb-77.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.slide .display-3 {
+.slideshow .display-3 {
     text-transform: uppercase;
-    color: #fff;
+    color: #fff !important;
 }
 
 /* navbar */
 .top-nav {
-    background-color: var(--brand);
-    color: #fff;
+    background-color: var(--brand) !important;
+    color: #fff !important;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -153,8 +160,8 @@ section {
     width: 28px;
     height: 28px;
     display: inline-flex;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.25) !important;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -162,8 +169,8 @@ section {
 }
 
 .social-icons a:hover {
-    background-color: #fff;
-    color: var(--brand);
+    background-color: #fff !important;
+    color: var(--brand) !important;
 }
 
 .conditions-section {
@@ -171,7 +178,7 @@ section {
 }
 
 .conditions-section a {
-    color: #fff;
+    color: #fff !important;
     margin: 0 10px;
 }
 
@@ -192,10 +199,6 @@ section {
     font-weight: 700;
 }
 
-.navbar-brand .dot {
-    color: var(--brand);
-}
-
 .btn {
     padding: 8px 26px;
 }
@@ -210,14 +213,14 @@ section {
     background-color: #d64022 !important;
     border-color: #d64022 !important;
     color: #fff !important;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 /*--------------------------------------------------------------
   # Beneficios
   --------------------------------------------------------------*/
 .benefit {
-    /* background: url("../assets/img/benefit-1.jpg") center center;
-    background-size: cover; */
     position: relative;
     padding: 80px 0;
     color: black;
@@ -262,8 +265,8 @@ section {
 
 .benefit .benefit-img::after {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 115px;
+    bottom: 18px;
     width: 50px;
     height: 50px;
     z-index: 2;
@@ -283,7 +286,7 @@ section {
 }
 
 .benefit .benefit-img:hover::after {
-    right: 150px;
+    right: 105px;
     bottom: 10px;
 }
 
@@ -352,7 +355,7 @@ section {
 
 .benefit-block strong {
     position: relative;
-    color: #222222;
+    color: #222222 !important;
     font-size: 24px;
     font-weight: 600;
     color: black;
@@ -360,64 +363,10 @@ section {
 
 .benefit-block .feature-text {
     position: relative;
-    color: #555555;
+    color: #555555 !important;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7em;
     margin-top: 3px;
     color: black;
-}
-
-
-.benefits-section .images-column {
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.benefits-section .images-column .pattern-layer {
-    position: absolute;
-    left: 15px;
-    top: 30px;
-    width: 141px;
-    height: 141px;
-    background-repeat: no-repeat;
-    background-image: url("../assets/img/pattern-5.png");
-}
-
-.benefits-section .images-column .pattern-layer-two {
-    position: absolute;
-    left: 35px;
-    bottom: 0px;
-    width: 150px;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-image: url("../assets/img/pattern-6.png");
-}
-
-.benefits-section .images-column .inner-column {
-    position: relative;
-    padding-top: 110px;
-    padding-left: 70px;
-    padding-bottom: 55px;
-}
-
-.benefits-section .images-column .image-one {
-    position: absolute;
-    left: 0px;
-    top: 250px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-}
-
-.benefits-section .images-column .image-two {
-    position: absolute;
-    right: 80px;
-    top: 50px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-}
-
-.benefits-section .images-column .image-three {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }

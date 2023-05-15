@@ -11,9 +11,9 @@ const ParteBeneficios = () => {
                <div className="row clearfix">
                   <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                      <div className="benefit-sec-title">
-                        <div className="title">OUR BENEFITS</div>
+                        <div className="title">NUESTROS BENEFICIOS</div>
                         <h2>
-                           EVERYTHING IS <br /> POSSIBLE WITH US
+                           TODO ES <br /> POSIBLE CON NOSOTROS
                         </h2>
                      </div>
 
@@ -26,10 +26,9 @@ const ParteBeneficios = () => {
                            </div>
                            <div className="col-md-11">
                               <div className="block-inner">
-                                 <strong>40 Courses a Week</strong>
+                                 <strong>40 cursos a la semana</strong>
                                  <div className="feature-text">
-                                    Everyday our entire team works to deliver
-                                    you our skills, knowledge and passion
+                                    Todos los días todo nuestro equipo trabaja para brindarle nuestras habilidades, conocimiento y pasión
                                  </div>
                               </div>
                            </div>
@@ -45,10 +44,9 @@ const ParteBeneficios = () => {
                            <div className="col-md-11">
                               <div className="block-inner">
                                  <span className="icon icon flaticon-fitness-2"></span>
-                                 <strong>35+ Professional Trainers</strong>
+                                 <strong>Más de 35 entrenadores profesionales</strong>
                                  <div className="feature-text">
-                                    Everyday our entire team works to deliver
-                                    you our skills, knowledge and passion
+                                    Los mejores entrenadores a tu servicio apoyandote fisica y mentalmente para logres tu objetivo.
                                  </div>
                               </div>
                            </div>
@@ -63,10 +61,9 @@ const ParteBeneficios = () => {
                            </div>
                            <div className="col-md-11">
                               <div className="block-inner">
-                                 <strong>Effective Group Training</strong>
+                                 <strong>Capacitación grupal efectiva</strong>
                                  <div className="feature-text">
-                                    Everyday our entire team works to deliver
-                                    you our skills, knowledge and passion
+                                    Citamos a reuniones grupales programadas donde podras relacionarte con personas que pasaron por tu proceso y animarte en el tuyo.
                                  </div>
                               </div>
                            </div>

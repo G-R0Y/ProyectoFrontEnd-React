@@ -1,34 +1,33 @@
 import React from "react";
 import "../Estilos/Juan.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import imgLogo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 function Header() {
    return (
       <>
-         <section className="top-nav" id="home">
+         <section className="top-nav section" id="home">
             <div className="container">
                <div className="row justify-content-between">
                   <div className="col-auto">
                      <p>
                         {" "}
-                        <i className="bx bxs-location-plus"></i> 27 Division St,
-                        New York, USA
+                        <i className="bx bxs-location-plus"></i> Av. Marsano 587, Miraflores
                      </p>
                      <p>
                         {" "}
-                        <i className="bx bxs-phone-call"></i> +1 (044) 123 456
-                        789
+                        <i className="bx bxs-phone-call"></i> +51 998 685 222
                      </p>
                   </div>
                   <div className="col-auto social-icons">
-                     <a href="#">
+                     <a href="#" className="a">
                         <i className="bx bxl-facebook"></i>
                      </a>
-                     <a href="#">
+                     <a href="#" className="a">
                         <i className="bx bxl-twitter"></i>
                      </a>
-                     <a href="#">
+                     <a href="#" className="a">
                         <i className="bx bxl-instagram"></i>
                      </a>
                   </div>
@@ -38,9 +37,9 @@ function Header() {
 
          <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
             <div className="container">
-               <a className="navbar-brand" href="#">
+               <Link className="navbar-brand" href="#">
                   Activa Gym<span className="dot">.</span>
-               </a>
+               </Link>
                <button
                   className="navbar-toggler"
                   type="button"
@@ -56,52 +55,47 @@ function Header() {
                   <ul className="navbar-nav ms-auto">
                      <li className="nav-item">
                         <Link
-                           className="nav-link active"
+                           className="nav-link active a"
                            // aria-current="page"
                            to="/"
                         >
-                           Home
+                           Inicio
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link" to="/About">
-                           About
+                        <Link className="nav-link a" to="/About">
+                           Acerca de
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link" to="/CartContainer">
-                           Services
+                        <Link className="nav-link a" to="/CartContainer">
+                           Servicios
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#portfolio">
+                        <Link className="nav-link" to="/portfolio">
                            Portfolio
-                        </a>
+                        </Link>
                      </li>
-                     <li className="nav-item">
+                     {/* <li className="nav-item">
                         <a className="nav-link" href="#team">
                            Team
                         </a>
-                     </li>
+                     </li> */}
                      {/* <li className="nav-item">
                         <a className="nav-link" href="#reviews">
                            Reviews
                         </a>
                      </li> */}
-                     <li className="nav-item">
+                     {/* <li className="nav-item">
                         <a className="nav-link" href="#blog">
                            Blog
                         </a>
-                     </li>
+                     </li> */}
                   </ul>
-                  <a
-                     href="#"
-                     data-bs-toggle="modal"
-                     data-bs-target="#exampleModal"
-                     className="btn btn-brand ms-lg-3"
-                  >
+                  <Link className="btn btn-brand ms-lg-3" to="/login">
                      <i className="fa-solid fa-user"></i>
-                  </a>
+                  </Link>
                </div>
             </div>
          </nav>
