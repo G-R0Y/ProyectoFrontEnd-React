@@ -16,7 +16,6 @@ const RouterHome = () => {
          <PartePagos />
          <ParteIMC />
          <ParteContacto />
-         <Footer />
       </>
    );
 };
