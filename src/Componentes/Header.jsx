@@ -38,9 +38,9 @@ function Header() {
 
          <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
             <div className="container">
-               <a className="navbar-brand" href="#">
+               <Link className="navbar-brand" href="#">
                   Activa Gym<span className="dot">.</span>
-               </a>
+               </Link>
                <button
                   className="navbar-toggler"
                   type="button"
@@ -74,34 +74,29 @@ function Header() {
                         </Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#portfolio">
+                        <Link className="nav-link" to="/portfolio">
                            Portfolio
-                        </a>
+                        </Link>
                      </li>
-                     <li className="nav-item">
+                     {/* <li className="nav-item">
                         <a className="nav-link" href="#team">
                            Team
                         </a>
-                     </li>
+                     </li> */}
                      {/* <li className="nav-item">
                         <a className="nav-link" href="#reviews">
                            Reviews
                         </a>
                      </li> */}
-                     <li className="nav-item">
+                     {/* <li className="nav-item">
                         <a className="nav-link" href="#blog">
                            Blog
                         </a>
-                     </li>
+                     </li> */}
                   </ul>
-                  <a
-                     href="#"
-                     data-bs-toggle="modal"
-                     data-bs-target="#exampleModal"
-                     className="btn btn-brand ms-lg-3"
-                  >
+                  <Link className="btn btn-brand ms-lg-3" to="/login">
                      <i className="fa-solid fa-user"></i>
-                  </a>
+                  </Link>
                </div>
             </div>
          </nav>
