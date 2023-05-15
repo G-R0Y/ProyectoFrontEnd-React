@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../Componentes/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Estilos/portafolio.css";
 

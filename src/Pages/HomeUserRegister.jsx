@@ -1,7 +1,6 @@
 import React from "react";
 import { useAuth } from "../Contexts/AuthContext";
-import { useNavigate, Link } from "react-router-dom";
-import { Form, Button, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "../Componentes/navbarHomeRegister";
 

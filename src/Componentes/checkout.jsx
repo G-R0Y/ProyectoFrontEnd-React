@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
-
-import CardIcon from "../assets/credit-card.svg";
-
 import "../Estilos/button.css";
-import Succes from "./succes";
-import Cancel from "./cancel";
 let stripePromise;
 
 const getStripe = () => {
