@@ -1,0 +1,25 @@
+.ParteContacto{
+    max-width: 1350px;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.837);
+
+}
+#info-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    padding-right: 60px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.705);
+}
+#info-contacto .mb-3,h4{
+    color: rgb(255, 38, 0);
+}

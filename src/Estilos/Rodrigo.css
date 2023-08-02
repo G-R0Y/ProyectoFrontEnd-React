@@ -1,0 +1,50 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* text-align: left; */
+}
+
+.footer_r{
+    background-color: rgba(0, 0, 0, 0.877); 
+    background-image: url("../assets/img/pattern-4.png");
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.logo-footer img{
+    height: 100px;
+}
+.cel{
+    border: solid 2px red;
+    display: flex;
+    justify-content:space-between;
+    padding-right: 45px; 
+    align-items: center ;
+    margin-bottom: 10px;
+}
+.cel .phone{
+    color: white;
+    height: 100%;
+    padding: 20px;
+    background-color: red;
+    margin: 5px;
+}
+.text-white{
+    text-decoration: none;
+}
+#footer-space-line{
+    border: solid 4px rgb(255, 0, 0);
+    width: 60px;
+}
+
+.botonesarticulo{
+    display: flex;
+    align-items: space-between;
+}
+.botonesarticulo button{
+    margin: 4px;
+}
+.card-title{
+    color:black;
+}
