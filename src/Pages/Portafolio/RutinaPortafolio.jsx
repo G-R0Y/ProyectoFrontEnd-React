@@ -1,42 +1,59 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Axios from "axios";
+
 const RutinaPortafolio = () => {
-  const portafolio_items = [
+  /* const portafolio_items = [
     {
-      imagen: "../src/assets/img/1-1-370x370.jpg",
-      tittle: "Ejercicio 1",
-    },
-    {
-      imagen: "../src/assets/img/1-1-370x370.jpg",
-      tittle: "Ejercicio 1",
-    },
-    {
-      imagen: "../src/assets/img/1-1-370x370.jpg",
-      tittle: "Ejercicio 1",
-    },
-    {
-      imagen: "../src/assets/img/1-1-370x370.jpg",
-      tittle: "Ejercicio 1",
-    },
-    {
-      imagen: "../src/assets/img/1-1-370x370.jpg",
-      tittle: "Ejercicio 1",
-    },
-  ];
+    "id": 1,
+    "nombre": "Entrenamiento personalizado",
+    "descripcion": "Nuestros entrenadores altamente calificados trabajarán contigo para desarrollar un programa de ejercicios personalizado basado en tus objetivos específicos, nivel de condición física y preferencias.",
+    "imagen": "https://res.cloudinary.com/dbbe8abtz/image/upload/v1689559846/portafolio/portfolio-img1_jbw3z2.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Clases grupales de fitness",
+    "descripcion": "Ofrecemos una variedad de clases grupales emocionantes y motivadoras, desde aeróbicos de alto impacto y spinning hasta yoga relajante y pilates.",
+    "imagen": "https://res.cloudinary.com/dbbe8abtz/image/upload/v1689559847/portafolio/portfolio-img2_ia7cdb.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Máquinas de entrenamiento y pesas",
+    "descripcion": "Contamos con una completa sala de pesas y equipos de entrenamiento de última generación. Aquí podrás trabajar diferentes grupos musculares, mejorar tu fuerza y tonificación muscular.",
+    "imagen": "https://res.cloudinary.com/dbbe8abtz/image/upload/v1689559848/portafolio/portfolio-img3_xtrcmv.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Entrenamiento funcional",
+    "descripcion": "El entrenamiento funcional se centra en mejorar la fuerza y la estabilidad para actividades diarias y deportes. Mediante ejercicios que imitan movimientos naturales, mejorarás la coordinación, el equilibrio y la resistencia, lo que te permitirá disfrutar de una vida más activa y con menos riesgo de lesiones.",
+    "imagen": "https://res.cloudinary.com/dbbe8abtz/image/upload/v1689559847/portafolio/portfolio-img5_xu1onm.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Circuito de entrenamiento",
+    "descripcion": "Nuestro circuito de entrenamiento ofrece una rutina completa y variada en la que te mueves de una estación a otra realizando ejercicios diferentes. Es una forma eficiente de quemar calorías, mejorar la resistencia cardiovascular y fortalecer diferentes grupos musculares en una sola sesión.",
+    "imagen": "https://res.cloudinary.com/dbbe8abtz/image/upload/v1689559848/portafolio/portfolio-img3_xtrcmv.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Programa de Levantamiento de Pesas Avanzado",
+    "descripcion": "Nuestro programa de levantamiento de pesas avanzado está diseñado para aquellos que desean llevar su entrenamiento de fuerza al siguiente nivel. Este programa se enfoca en técnicas de levantamiento más complejas, como levantamientos olímpicos y levantamientos compuestos, para aumentar la fuerza y el tamaño muscular de manera efectiva.",
+    "imagen": "https://res.cloudinary.com/dbbe8abtz/image/upload/v1689559850/portafolio/portfolio-img6_fqlwhu.jpg"
+  }
+  ]; */
 
   const [data, setDate] = useState([]);
 
   useEffect(() => {
-    Axios.get(
-      "..."
+    const data = Axios.get(
+      "http://159.223.125.50/api/portafolios"
     ) /* URL DEL BACKEND EN JSON ------------> https://jsonplaceholder.typicode.com/users */
       .then((res) => {
         setDate(res.data);
       })
       .catch((err) => console.log(err));
   });
-  const arr = portafolio_items.map((item) => {
+  const arr = data.map((item) => {
     return (
       <div className="col-lg-4 mb-2">
         <div className="card text-bg-dark">
@@ -48,6 +65,8 @@ const RutinaPortafolio = () => {
 
             <div className="card-img-overlay d-flex align-items-end">
               <div className="card-body">
+                
+                
                 <button className="btn btn-outline-danger">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,8 +81,9 @@ const RutinaPortafolio = () => {
                 </button>
 
                 <h2 className="card-text" id="card-rutinas">
-                  {item.tittle}
+                  {item.nombre}
                 </h2>
+
               </div>
             </div>
           </div>

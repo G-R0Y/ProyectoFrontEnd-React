@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Button, Modal } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../Estilos/Rodrigo.css"
+import "../Estilos/Rodrigo.css";
+
 import Axios from "axios";
 
 function Productos() {
-  const producto_items = [
+  /* const producto_items = [
     {
       nombre_articulo: "Producto 1",
       descripcion_articulo: "descripcion 1",
@@ -77,17 +79,21 @@ function Productos() {
       marca_articulo: "Marca 8",
       imagen_Articulo: "../src/assets/img/1-1-370x370.jpg",
     },
-  ];
+  ]; */
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const [data, SetDate] = useState([]);
   useEffect(() => {
-    Axios.get("...")
+    const data= Axios.get("http://159.223.125.50/api/productos") ///URL DEL BACKEND
       .then((res) => {
         SetDate(res.data);
       })
       .catch((err) => console.log(err));
   });
-  const arr = producto_items.map((item) => {
+  /* const arr = producto_items.map((item) */ 
+  const arr = data.map((item) => {
     return (
       <div className="col-lg-3 mb-2">
         <div className="card">
@@ -98,9 +104,37 @@ function Productos() {
             <p className="card-text">{item.precio_articulo}</p>
             <p className="card-text">{item.marca_articulo}</p>
             <div className="botonesarticulo">
-              <button to="#" className="btn btn-info">
+              <div>
+                <Button id="modalbutton" variant="primary" onClick={handleShow}>
+                  Detalles
+                </Button>
+
+                <Modal id="modalpadre" show={show} onHide={handleClose} style={{ fontSize: "30px"}}>
+                  <Modal.Header closeButton id="modalheader">
+                    <Modal.Title style={{}}>
+                      
+                      Detalles de {item.nombre_articulo}
+                      </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body id="modalbody" style={{ backgroundImage: `url(${item.imagen_Articulo})` , opacity: 0.9}}>
+                    <h5>{item.nombre_articulo}</h5>
+                    <h5>Talla: {item.talla_articulo}</h5>
+                    <h5>Color: {item.color_articulo}</h5>
+                    <h5>Precio: {item.precio_articulo}</h5>
+                    <h5>Marca: {item.marca_articulo}</h5>
+                    <h5>Descripción: {item.descripcion_articulo}</h5>
+                    </Modal.Body>
+                  <Modal.Footer id="modalfooter" style={{justifyContent:"center"}}>
+                    <Button variant="danger" onClick={handleClose}>
+                      Cerrar
+                    </Button>
+                    
+                  </Modal.Footer>
+                </Modal>
+              </div>
+              {/* <button to="#" className="btn btn-info">
                 Detalles
-              </button>
+              </button> */}
               <button to="#" className="btn btn-success">
                 Comprar
               </button>
