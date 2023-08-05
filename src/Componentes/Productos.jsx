@@ -86,7 +86,7 @@ function Productos() {
   const handleShow = () => setShow(true);
   const [data, SetDate] = useState([]);
   useEffect(() => {
-    const data= Axios.get("http://159.223.125.50/api/productos") ///URL DEL BACKEND
+    const data= Axios.get("http://159.223.125.50/api/articulo") ///URL DEL BACKEND
       .then((res) => {
         SetDate(res.data);
       })
@@ -97,11 +97,11 @@ function Productos() {
     return (
       <div className="col-lg-3 mb-2">
         <div className="card">
-          <img src={item.imagen_Articulo} className="card-img-top" alt="..." />
+          <img src={item.imagen_articulo} className="card-img-top" alt="..." />
 
           <div className="card align-items-center">
             <h5 className="card-title">{item.nombre_articulo}</h5>
-            <p className="card-text">{item.precio_articulo}</p>
+            <p className="card-text">S/{item.precio_articulo}.00</p>
             <p className="card-text">{item.marca_articulo}</p>
             <div className="botonesarticulo">
               <div>
@@ -109,18 +109,25 @@ function Productos() {
                   Detalles
                 </Button>
 
-                <Modal id="modalpadre" show={show} onHide={handleClose} style={{ fontSize: "30px"}}>
+                <Modal id="modalpadre" show={show} onHide={handleClose} style={{
+                    fontSize: "30px",
+                    backgroundImage: `url(${item.imagen_articulo})`,
+                    opacity: 0.9,
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}>
                   <Modal.Header closeButton id="modalheader">
                     <Modal.Title style={{}}>
                       
                       Detalles de {item.nombre_articulo}
                       </Modal.Title>
                   </Modal.Header>
-                  <Modal.Body id="modalbody" style={{ backgroundImage: `url(${item.imagen_Articulo})` , opacity: 0.9}}>
+                  <Modal.Body id="modalbody" >
                     <h5>{item.nombre_articulo}</h5>
                     <h5>Talla: {item.talla_articulo}</h5>
                     <h5>Color: {item.color_articulo}</h5>
-                    <h5>Precio: {item.precio_articulo}</h5>
+                    <h5>Precio: S/{item.precio_articulo}.00</h5>
                     <h5>Marca: {item.marca_articulo}</h5>
                     <h5>Descripción: {item.descripcion_articulo}</h5>
                     </Modal.Body>
